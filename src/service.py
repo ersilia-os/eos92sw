@@ -55,7 +55,7 @@ class EToxModel(object):
             lines = ["cd {0}".format(self.framework_dir)]
             lines += [
                 "python etoxpred_predict.py --datafile {0} --modelfile {1} --outputfile {2}".format(
-                    self.framework_dir, data_file, chkp_file, pred_file
+                    data_file, chkp_file, pred_file
                 )
             ]
             lines += ["cd {0}".format(cwd)]
