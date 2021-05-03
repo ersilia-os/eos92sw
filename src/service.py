@@ -51,11 +51,14 @@ class EToxModel(object):
                 f.write(smiles + "\t" + mol_id + os.linesep)
         run_file = os.path.join(tmp_folder, self.RUN_FILE)
         with open(run_file, "w") as f:
-            lines = [
-                "python {0}/etoxpred_predict.py --datafile {1} --modelfile {2} --outputfile {3}".format(
+            cwd = os.getcwd()
+            lines = ["cd {0}".format(self.framework_dir)]
+            lines += [
+                "python etoxpred_predict.py --datafile {0} --modelfile {1} --outputfile {2}".format(
                     self.framework_dir, data_file, chkp_file, pred_file
                 )
             ]
+            lines += ["cd {0}".format(cwd)]
             f.write(os.linesep.join(lines))
         cmd = "bash {0}".format(run_file)
         with open(os.devnull, "w") as fp:
