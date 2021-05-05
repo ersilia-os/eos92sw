@@ -14,8 +14,8 @@ The eToxPred tool has been developed to predict, on one hand, the synthetic acce
 ## Specifications
 * Input: SMILES string (also accepts an InChIKey string or a molecule name string, and converts them to SMILES)
 * Endpoint: 
-    * SAscore: synthetic accessibility (1: easy - 10: difficult). SA > 6 is estimated to be a high score
-    * Toxscore: probability of toxicity (0: low - 1: high). The treshold for toxicity is estimated to be 0.58.
+    * SAscore: synthetic accessibility (1: easy - 10: difficult).
+    * Toxscore: probability of toxicity (0: low - 1: high).
 * Results interpretation:
     * SAscore: SA > 6 is estimated to be a high score
     * Toxscore: The treshold for toxicity is estimated to be 0.58.
