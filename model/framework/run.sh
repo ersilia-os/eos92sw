@@ -1,0 +1,1 @@
+python $1/etoxpred_predict.py $2 $3
