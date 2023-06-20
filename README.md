@@ -23,6 +23,9 @@ The eToxPred tool has been developed to predict, on one hand, the synthetic acce
 * [Source Code](https://github.com/pulimeng/eToxPred)
 * Ersilia contributor: [miquelduranfrigola](https://github.com/miquelduranfrigola)
 
+## Ersilia model URLs
+* [GitHub](https://github.com/ersilia-os/eos92sw)
+
 ## Citation
 
 If you use this model, please cite the [original authors](https://bmcpharmacoltoxicol.biomedcentral.com/articles/10.1186/s40360-018-0282-6) of the model and the [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
