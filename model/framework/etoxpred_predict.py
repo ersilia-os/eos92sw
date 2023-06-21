@@ -73,7 +73,7 @@ def predict(smiles_list):
     # df.to_csv(output_file, index=False)
     output = df[['smiles','Tox-score','SAscore']].values.tolist()  
     print('returning output')
-    print(output)
+    # print(output)
     return output
  
 # read SMILES from .csv file, assuming one column with header
@@ -96,7 +96,7 @@ with open(output_file, "w") as f:
     writer = csv.writer(f)
     writer.writerow(['smiles', 'Tox-score', 'SAscore'])  # header
     for r in outputs:
-        print(r)
+        # print(r)
         writer.writerow(r)
     print('saving output done')
 
