@@ -25,6 +25,8 @@ The eToxPred tool has been developed to predict, on one hand, the synthetic acce
 
 ## Ersilia model URLs
 * [GitHub](https://github.com/ersilia-os/eos92sw)
+* [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos92sw.zip)
+* [DockerHub](https://hub.docker.com/r/ersiliaos/eos92sw) (AMD64)
 
 ## Citation
 

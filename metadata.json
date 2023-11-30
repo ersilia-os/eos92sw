@@ -27,5 +27,10 @@
     "Publication": "https://bmcpharmacoltoxicol.biomedcentral.com/articles/10.1186/s40360-018-0282-6",
     "Source Code": "https://github.com/pulimeng/eToxPred",
     "License": "GPL-3.0",
-    "Contributor": "miquelduranfrigola"
+    "Contributor": "miquelduranfrigola",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos92sw.zip",
+    "DockerHub": "https://hub.docker.com/r/ersiliaos/eos92sw",
+    "Docker Architecture": [
+        "AMD64"
+    ]
 }
