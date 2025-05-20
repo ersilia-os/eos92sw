@@ -1,0 +1,3 @@
+name,type,direction,description
+tox_score,float,high,Predicted toxicity score
+sa_score,float,high,Synthetic accessibility score

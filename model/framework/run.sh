@@ -1,1 +1,1 @@
-python $1/etoxpred_predict.py $2 $3
+python $1/code/main.py $2 $3

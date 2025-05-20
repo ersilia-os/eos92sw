@@ -9,9 +9,10 @@ from rdkit import rdBase
 from rdkit.Chem import AllChem
 
 import numpy as np
-
-from sascore import SAscore
 from joblib import load
+
+sys.path.append(os.path.abspath(__file__))
+from sascore import SAscore
 
 rdBase.DisableLog("rdApp.error")
 
@@ -19,7 +20,7 @@ rdBase.DisableLog("rdApp.error")
 input_file = sys.argv[1]
 output_file = sys.argv[2]
 
-CHECKPOINTS_BASEDIR = os.path.abspath(os.path.join(__file__,"../../checkpoints"))
+CHECKPOINTS_BASEDIR = os.path.abspath(os.path.join(__file__,"../../../checkpoints"))
 CHECKPOINT_FILE = "etoxpred_best_model.joblib" 
 modelfile = os.path.join(CHECKPOINTS_BASEDIR, CHECKPOINT_FILE) 
 
@@ -56,24 +57,16 @@ def load_data(smiles_list):
 
 def predict(smiles_list):
     df = pd.DataFrame(columns=["smiles", "Tox-score", "SAscore"])
-    # laod the data
     X, smiles_list = load_data(smiles_list)
-    # load the saved model and make predictions
-    print("...loading models")
     clf = load(modelfile)
     reg = SAscore()
-    print("...starts prediction")
     for i in range(X.shape[0]):
         tox_score = clf.predict_proba(X[i, :].reshape((1, 1024)))[:, 1]
         sa_score = reg(smiles_list[i]) 
         df.at[i, "smiles"] = smiles_list[i]
         df.at[i, "Tox-score"] = tox_score[0]
         df.at[i, "SAscore"] = sa_score
-    print("...prediction done!")
-    # df.to_csv(output_file, index=False)
-    output = df[['smiles','Tox-score','SAscore']].values.tolist()  
-    print('returning output')
-    # print(output)
+    output = df[['Tox-score','SAscore']].values.tolist()  
     return output
  
 # read SMILES from .csv file, assuming one column with header
@@ -94,9 +87,8 @@ assert input_len == output_len
 with open(output_file, "w") as f:
     print('saving output')
     writer = csv.writer(f)
-    writer.writerow(['smiles', 'Tox-score', 'SAscore'])  # header
+    writer.writerow(['tox_score', 'sa_score'])  # header
     for r in outputs:
-        # print(r)
         writer.writerow(r)
     print('saving output done')
 
