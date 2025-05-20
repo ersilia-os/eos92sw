@@ -40,9 +40,13 @@
     "Incorporation Date": "2021-04-30",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos92sw.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos92sw",
-    "Docker Architecture": [
-        "AMD64"
-    ],
+    "Docker Architecture": "AMD64",
     "Model Size": 59.0,
-    "Environment Size": 895.0
+    "Environment Size": 895.0,
+    "Image Size": 1013.91,
+    "Computational Performance 1": 33.03,
+    "Computational Performance 2": 23.12,
+    "Computational Performance 3": 27.38,
+    "Computational Performance 4": 133.82,
+    "Computational Performance 5": 621.03
 }
