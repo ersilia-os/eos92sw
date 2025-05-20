@@ -42,7 +42,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `59`
 - **Environment Size (Mb):** `895`
+- **Image Size (Mb):** `1013.91`
 
+**Computational Performance (seconds):**
+- 10 inputs: `33.03`
+- 100 inputs: `27.38`
+- 10000 inputs: `621.03`
 
 ### References
 - **Source Code**: [https://github.com/pulimeng/eToxPred](https://github.com/pulimeng/eToxPred)
