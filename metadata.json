@@ -3,21 +3,18 @@
     "Slug": "etoxpred",
     "Status": "Ready",
     "Title": "Toxicity and synthetic accessibility prediction",
-    "Description": "The eToxPred tool has been developed to predict, on one hand, the synthetic accessibility (SA) score, or how easy it is to make the molecule in the laboratory, and, on the other hand, the toxicity (Tox) score, or the probability of the molecule of being toxic to humans. The authors trained and cross-validated both predictors on a large number of datasets, and demonstrated the method usefulness in building virtual custom libraries.\n",
+    "Description": "The eToxPred tool has been developed to predict, on one hand, the synthetic accessibility (SA) score, or how easy it is to make the molecule in the laboratory, and, on the other hand, the toxicity (Tox) score, or the probability of the molecule of being toxic to humans. The authors trained and cross-validated both predictors on a large number of datasets, and demonstrated the method usefulness in building virtual custom libraries.",
+    "Deployment": [
+        "Local"
+    ],
     "Source": "Local",
     "Source Type": "External",
+    "Task": "Annotation",
+    "Subtask": "Activity prediction",
     "Input": [
         "Compound"
     ],
     "Input Dimension": 1,
-    "Task": "Annotation",
-    "Subtask": "Activity prediction",
-    "Biomedical Area": [
-        "ADMET"
-    ],
-    "Target Organism": [
-        "Homo sapiens"
-    ],
     "Output": [
         "Score"
     ],
@@ -28,19 +25,22 @@
         "Toxicity",
         "Synthetic accessibility"
     ],
-    "Publication": "https://bmcpharmacoltoxicol.biomedcentral.com/articles/10.1186/s40360-018-0282-6",
+    "Biomedical Area": [
+        "ADMET"
+    ],
+    "Target Organism": [
+        "Homo sapiens"
+    ],
     "Publication Type": "Peer reviewed",
     "Publication Year": 2019,
+    "Publication": "https://bmcpharmacoltoxicol.biomedcentral.com/articles/10.1186/s40360-018-0282-6",
     "Source Code": "https://github.com/pulimeng/eToxPred",
     "License": "GPL-3.0-only",
     "Contributor": "miquelduranfrigola",
-    "Incorporation Date": "2021-06-04",
+    "Incorporation Date": "2021-04-30",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos92sw.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos92sw",
     "Docker Architecture": [
         "AMD64"
-    ],
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos92sw.zip",
-    "Deployment": [
-        "Local"
     ]
 }
