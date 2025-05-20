@@ -2,7 +2,7 @@
 
 The eToxPred tool has been developed to predict, on one hand, the synthetic accessibility (SA) score, or how easy it is to make the molecule in the laboratory, and, on the other hand, the toxicity (Tox) score, or the probability of the molecule of being toxic to humans. The authors trained and cross-validated both predictors on a large number of datasets, and demonstrated the method usefulness in building virtual custom libraries.
 
-This model was incorporated on 2021-06-04.
+This model was incorporated on 2021-04-30.
 
 ## Information
 ### Identifiers
@@ -40,6 +40,8 @@ Below are the **Output Columns** of the model:
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos92sw.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos92sw.zip)
 
 ### Resource Consumption
+- **Model Size (Mb):** `59`
+- **Environment Size (Mb):** `895`
 
 
 ### References
