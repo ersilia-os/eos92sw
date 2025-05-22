@@ -36,18 +36,18 @@ Below are the **Output Columns** of the model:
 - **Source:** `Local`
 - **Source Type:** `External`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos92sw](https://hub.docker.com/r/ersiliaos/eos92sw)
-- **Docker Architecture:** `AMD64`
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos92sw.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos92sw.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `59`
 - **Environment Size (Mb):** `893`
-- **Image Size (Mb):** `1013.91`
+- **Image Size (Mb):** `1031.45`
 
 **Computational Performance (seconds):**
-- 10 inputs: `33.03`
-- 100 inputs: `27.38`
-- 10000 inputs: `621.03`
+- 10 inputs: `32.85`
+- 100 inputs: `26.61`
+- 10000 inputs: `575.43`
 
 ### References
 - **Source Code**: [https://github.com/pulimeng/eToxPred](https://github.com/pulimeng/eToxPred)
