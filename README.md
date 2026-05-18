@@ -51,7 +51,7 @@ Below are the **Output Columns** of the model:
 
 ### References
 - **Source Code**: [https://github.com/pulimeng/eToxPred](https://github.com/pulimeng/eToxPred)
-- **Publication**: [https://bmcpharmacoltoxicol.biomedcentral.com/articles/10.1186/s40360-018-0282-6](https://bmcpharmacoltoxicol.biomedcentral.com/articles/10.1186/s40360-018-0282-6)
+- **Publication**: [https://doi.org/10.1186/s40360-018-0282-6](https://doi.org/10.1186/s40360-018-0282-6)
 - **Publication Type:** `Peer reviewed`
 - **Publication Year:** `2019`
 - **Ersilia Contributor:** [miquelduranfrigola](https://github.com/miquelduranfrigola)
