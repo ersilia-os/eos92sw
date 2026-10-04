@@ -1,6 +1,6 @@
 # Toxicity and synthetic accessibility prediction
 
-The eToxPred tool has been developed to predict, on one hand, the synthetic accessibility (SA) score, or how easy it is to make the molecule in the laboratory, and, on the other hand, the toxicity (Tox) score, or the probability of the molecule of being toxic to humans. The authors trained and cross-validated both predictors on a large number of datasets, and demonstrated the method usefulness in building virtual custom libraries.
+Returns paired estimates of toxicity and synthetic accessibility from eToxPred, letting a candidate be judged on whether it is safe enough and makeable in a single step. The authors trained both predictors across large compound collections and demonstrated their use in assembling custom virtual libraries. The two scores run in opposite directions: toxicity rises with the value, while the synthetic accessibility score follows the usual convention where lower numbers indicate easier synthesis.
 
 This model was incorporated on 2021-04-30.Last packaged on 2025-10-08.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2021-04-30.Last packaged on 2025-10-08.
 ### Output
 - **Output Dimension:** `2`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Higher scores indicate easier synthetic accessibility and higher toxicity, respectively
+- **Interpretation:** Toxicity probability alongside a synthetic accessibility score where lower values mean easier synthesis.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
