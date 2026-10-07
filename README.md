@@ -1,6 +1,6 @@
 # Toxicity and synthetic accessibility prediction
 
-Returns paired estimates of toxicity and synthetic accessibility from eToxPred, letting a candidate be judged on whether it is safe enough and makeable in a single step. The authors trained both predictors across large compound collections and demonstrated their use in assembling custom virtual libraries. The two scores run in opposite directions: toxicity rises with the value, while the synthetic accessibility score follows the usual convention where lower numbers indicate easier synthesis.
+Pairs a toxicity estimate with a synthetic accessibility estimate so a candidate can be triaged for safety and for ease of synthesis in one pass, which the authors used to assemble custom virtual screening libraries. eToxPred predicts toxicity with extremely randomized trees over 1024-bit Morgan fingerprints, trained on 1515 FDA-approved drugs against 3035 hazardous chemicals from TOXNET, reaching an AUC of 0.82. The released code computes accessibility with the Ertl and Schuffenhauer fragment score, exponentially rescaled, so here higher values mean easier synthesis.
 
 This model was incorporated on 2021-04-30.Last packaged on 2025-10-08.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2021-04-30.Last packaged on 2025-10-08.
 ### Output
 - **Output Dimension:** `2`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Toxicity probability alongside a synthetic accessibility score where lower values mean easier synthesis.
+- **Interpretation:** Probability of being toxic, above 0.58 by the authors' cut-off, with higher accessibility values meaning easier synthesis.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
