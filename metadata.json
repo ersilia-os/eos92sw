@@ -20,7 +20,7 @@
     ],
     "Output Dimension": 2,
     "Output Consistency": "Fixed",
-    "Interpretation": "Probability of being toxic, above 0.58 by the authors' cut-off, with higher accessibility values meaning easier synthesis.",
+    "Interpretation": "Probability of being toxic, above 0.58 by the authors cut-off, with higher accessibility values meaning easier synthesis.",
     "Tag": [
         "Toxicity",
         "Synthetic accessibility"
