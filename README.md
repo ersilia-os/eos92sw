@@ -23,7 +23,7 @@ This model was incorporated on 2021-04-30.Last packaged on 2025-10-08.
 ### Output
 - **Output Dimension:** `2`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of being toxic, above 0.58 by the authors' cut-off, with higher accessibility values meaning easier synthesis.
+- **Interpretation:** Probability of being toxic, above 0.58 by the authors cut-off, with higher accessibility values meaning easier synthesis.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
@@ -41,7 +41,7 @@ Below are the **Output Columns** of the model:
 
 ### Resource Consumption
 - **Model Size (Mb):** `59`
-- **Environment Size (Mb):** `944`
+- **Environment Size (Mb):** `982`
 - **Image Size (Mb):** `1069.58`
 
 **Computational Performance (seconds):**
