@@ -39,7 +39,7 @@
     "Contributor": "miquelduranfrigola",
     "Incorporation Date": "2021-04-30",
     "Last Packaging Date": "2026-10-22",
-    "Release": "v1.0.0",
+    "Release": "v1.0.1",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos92sw.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos92sw",
     "Docker Architecture": [
