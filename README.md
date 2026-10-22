@@ -2,7 +2,7 @@
 
 Pairs a toxicity estimate with a synthetic accessibility estimate so a candidate can be triaged for safety and for ease of synthesis in one pass, which the authors used to assemble custom virtual screening libraries. eToxPred predicts toxicity with extremely randomized trees over 1024-bit Morgan fingerprints, trained on 1515 FDA-approved drugs against 3035 hazardous chemicals from TOXNET, reaching an AUC of 0.82. The released code computes accessibility with the Ertl and Schuffenhauer fragment score, exponentially rescaled, so here higher values mean easier synthesis.
 
-This model was incorporated on 2021-04-30.Last packaged on 2025-10-08.
+This model was incorporated on 2021-04-30.Last packaged on 2026-10-22.
 
 ## Information
 ### Identifiers
@@ -42,12 +42,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `59`
 - **Environment Size (Mb):** `982`
-- **Image Size (Mb):** `1069.58`
+- **Image Size (Mb):** `1077.16`
 
 **Computational Performance (seconds):**
-- 10 inputs: `28.43`
-- 100 inputs: `19.72`
-- 10000 inputs: `154.69`
+- 10 inputs: `24.46`
+- 100 inputs: `14.06`
+- 10000 inputs: `92.94`
 
 ### References
 - **Source Code**: [https://github.com/pulimeng/eToxPred](https://github.com/pulimeng/eToxPred)
