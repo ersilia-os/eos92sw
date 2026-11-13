@@ -108,7 +108,7 @@ class SAscore:
 
         global _fscores
         # generate the full path filename:
-        file_path = os.path.abspath(os.path.join(__file__,".."))  
+        file_path = os.path.abspath(os.path.join(__file__, "..", "..", "..", "checkpoints"))
         name = os.path.join(file_path, name)
         _fscores = pickle.load(gzip.open("%s.pkl.gz" % name))
         outDict = {}
