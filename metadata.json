@@ -38,7 +38,7 @@
     "License": "GPL-3.0-only",
     "Contributor": "miquelduranfrigola",
     "Incorporation Date": "2021-04-30",
-    "Last Packaging Date": "2026-10-22",
+    "Last Packaging Date": "2026-11-13",
     "Release": "v1.0.1",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos92sw.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos92sw",
@@ -48,10 +48,10 @@
     ],
     "Model Size": 76.0,
     "Environment Size": 982.0,
-    "Image Size": 1077.16,
-    "Computational Performance 1": 24.46,
-    "Computational Performance 2": 13.3,
-    "Computational Performance 3": 14.06,
-    "Computational Performance 4": 27.0,
-    "Computational Performance 5": 92.94
+    "Image Size": 311.16,
+    "Computational Performance 1": 24.28,
+    "Computational Performance 2": 13.34,
+    "Computational Performance 3": 13.81,
+    "Computational Performance 4": 26.79,
+    "Computational Performance 5": 85.7
 }
